@@ -26,7 +26,7 @@ Go to this drive and download all the files. Place them in a folder custom-2 in 
 
 ## Instructions for getting it running on your Raspberry Pi:
 Download this repository and place it on your raspberry pi. Paste the custom-2 folder with the weights from the drive in this repo.
-The folder structure should be:
+The folder structure should be:  
 F1-Car-Detection-Project  
 |  
 ---> custom-2  
