@@ -27,9 +27,21 @@ Go to this drive and download all the files. Place them in a folder custom-2 in 
 ## Instructions for getting it running on your Raspberry Pi:
 Download this repository and place it on your raspberry pi. Paste the custom-2 folder with the weights from the drive in this repo.
 The folder structure should be:
-F1-Car-Detection-Project
-|
----> custom-2
+F1-Car-Detection-Project  
+|  
+---> custom-2  
+
+You will also have to set up your apache webserver on your raspberry pi.
+Host the website on the raspberry pi so that it can be served as soon as the processing is competed.
+Run the F1Proj.py file to begin the process. 
 
 ## Youtube video demonstrating the working project:
 https://www.youtube.com/watch?v=W42iA6Xadu0
+
+
+## Some Issues I faced while making this:
+1: Darkflow on python was not working with the latest tensorflow build.  
+https://stackoverflow.com/questions/55196713/yolo-darkflow-error-tensorflow-python-framework-errors-impl-invalidargumenterro?noredirect=1#comment97254787_55196713  
+I uninstalled tensorflow 1.14 and installed tensorflow 1.11 which solved the problem for me.
+
+2: This is a stupid mistake I made, but when trying to build the darkflow on windows, I did not have the correct opencv version. AlexeyAB mentioned in his guide to get darkflow working that openCV 3.4 will not work. Make sure you are using an older one if that hasn't been fixed.
