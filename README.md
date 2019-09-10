@@ -34,6 +34,10 @@ F1-Car-Detection-Project
 You will also have to set up your apache webserver on your raspberry pi.
 Host the website on the raspberry pi so that it can be served as soon as the processing is competed.
 Run the F1Proj.py file to begin the process. 
+place all the php files in the /var/www/html folder in your raspberry pi.
+when the F1Proj.py has finished loading all the models, it goes into the ready state; when it gets input from the IR sensor, it will capture an image and begin the process.
+Open the raceUpdates.php file on your browser (can be any browser connected to the same network; I had turned on my mobile hotspot, so if another device connects to the hotspot, that device can access the data. It can be server over the internet as well. If the F1 stadium offers free WiFi, this data can be transferred without internet.) 
+When you open the raceUpdates.php on your browser, you will see a list of race lap times.
 
 ## Youtube video demonstrating the working project:
 https://www.youtube.com/watch?v=W42iA6Xadu0
@@ -45,3 +49,8 @@ https://stackoverflow.com/questions/55196713/yolo-darkflow-error-tensorflow-pyth
 I uninstalled tensorflow 1.14 and installed tensorflow 1.11 which solved the problem for me.
 
 2: This is a stupid mistake I made, but when trying to build the darkflow on windows, I did not have the correct opencv version. AlexeyAB mentioned in his guide to get darkflow working that openCV 3.4 will not work. Make sure you are using an older one if that hasn't been fixed.
+
+## Contact me:
+I know I haven't made a complete explaination of the project over here due to time contraints on me. If you have any doubt, please ask and I would appreciate it if you want to add to the readme.
+My College email address:
+kunal.kolhe@stonybrook.edu
