@@ -1,4 +1,5 @@
 # F1-Car-Detection-Project
+Prototype system to automatically capture times of F1 cars in races using computer vision. The results are visible to everyone over the internet.
 
 ## What all I used to make the project:
 YOLO, darknet on Windows: https://github.com/AlexeyAB/darknet  
